@@ -10,7 +10,6 @@ ENV VITE_API_URL=${VITE_API_URL}
 COPY tsconfig*.json vite.config.ts tailwind.config.js postcss.config.js ./
 COPY index.html ./index.html
 COPY src ./src
-COPY public ./public
 
 RUN npm run build
 
